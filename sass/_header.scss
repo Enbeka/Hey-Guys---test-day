@@ -1,0 +1,65 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem 8.5rem 0 0;
+
+    @media (max-width: $bp-large){
+         margin: 8rem 6rem 0 0;
+    }
+
+    @media (max-width: $bp-medium){
+        margin: 8rem 6rem 3.5rem 0;
+   }
+
+   @media (max-width: $bp-smallest){
+        flex-direction: column;
+        margin: 4rem 6rem 3.5rem 0;
+    }
+
+    &__logo{
+        height: 9rem;
+        width: 56rem;
+        background-color: $color-logo;
+
+    }
+
+    &__socials{
+        display: flex;
+
+        @media (max-width: $bp-smallest){
+            order: -1;
+            align-self: flex-end;
+            padding: 0 0 6rem;
+        }
+
+        &-text{
+            font-size: 1.8rem;
+            font-family: arial;
+            padding: .5rem 1.6rem .5rem 0;
+            border-right: 1px solid $color-white;
+            font-weight: 700;
+            color: $color-white;
+
+            text-transform: uppercase;
+            align-self: flex-start;
+            margin-right: 1.6rem;
+            letter-spacing: 1px;
+
+        }
+
+        &-icons{
+            color: $color-white;
+            font-size: 2.6rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &-icon{
+            color: $color-white;
+            &:not(:last-child){
+                padding-right: 1rem;
+            }
+        }
+
+    }
+}
