@@ -51,7 +51,13 @@
             margin-right: 8rem;
        }
 
+       @media (max-width: $bp-moblie){
+           margin-right: 8rem;
+        
+    }
+
        @media (max-width: $bp-moblie-small){
+        text-align: center;
         margin-right: 0;
     }
        
@@ -96,12 +102,13 @@
         @media (max-width: $bp-large){
             padding-left: 6rem;
             margin-bottom: 4rem;
+            
        }
 
        @media (max-width: $bp-moblie){
             padding-left: 3rem;
             padding-right: 3rem;
-    }
+        }
     }
 
     &__radio-input{
@@ -112,6 +119,7 @@
         margin-left: 2rem;
         font-weight: 700;
         position: relative;
+        cursor: pointer;
     }
 
     &__radio-button{
@@ -148,6 +156,7 @@
     border: none;
     background-color: $color-primary;
     transition: all .2s;
+    cursor: pointer;
 
     &:hover{
         // transform: translateY(-.5rem);

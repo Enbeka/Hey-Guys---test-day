@@ -35,18 +35,25 @@
         @media (max-width: $bp-smallest){
             justify-content: center;
         }
+
+        @media (max-width: $bp-moblie){
+            flex-direction: column;
+            align-items: center;
+        }
         
 
         &-item{
             padding-right: .8rem;
-            
-           
 
             &--single-item{
                 text-decoration: none;
                 font-size: .87rem;
                 color: $color-white;
                 text-transform: uppercase;
+
+                @media (max-width: $bp-moblie){
+                    font-size: 1.5rem;
+                }
             }
         }
     }
@@ -63,6 +70,10 @@
             align-items: center;
         }
 
+        @media (max-width: $bp-moblie){
+            width: 80%;
+        }
+
 
         &-heading{
             font-weight: 700;
@@ -74,9 +85,14 @@
                 margin-top: 2.5rem;
                 
                 border-top: 1px solid $color-white;
-                
+
             
             }
+
+            @media (max-width: $bp-moblie){
+                font-size: 2rem;
+            }
+
         }
 
         &-paragraph{
@@ -85,6 +101,10 @@
 
             @media (max-width: $bp-smallest){
                 text-align: center;
+            }
+
+            @media (max-width: $bp-moblie){
+                font-size: 1.5rem;
             }
         }
     }

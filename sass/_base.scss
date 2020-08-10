@@ -25,6 +25,7 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
 
     @media (max-width: $bp-largest){
         font-size: 56.25%;

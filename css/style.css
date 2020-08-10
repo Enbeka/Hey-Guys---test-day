@@ -8,7 +8,8 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden; }
   @media (max-width: 112.5em) {
     html {
       font-size: 56.25%; } }
@@ -71,8 +72,12 @@ body {
     @media (max-width: 78.125em) {
       .text-box__article {
         margin-right: 8rem; } }
+    @media (max-width: 34.375em) {
+      .text-box__article {
+        margin-right: 8rem; } }
     @media (max-width: 28em) {
       .text-box__article {
+        text-align: center;
         margin-right: 0; } }
 
 .form-box {
@@ -113,7 +118,8 @@ body {
   .form-box__radio-label {
     margin-left: 2rem;
     font-weight: 700;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
   .form-box__radio-button {
     top: .8rem;
     left: -4rem;
@@ -140,7 +146,8 @@ body {
   color: #fff;
   border: none;
   background-color: #c21b17;
-  transition: all .2s; }
+  transition: all .2s;
+  cursor: pointer; }
   .btn:hover {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
   .btn:focus {
@@ -186,6 +193,10 @@ body {
     @media (max-width: 48em) {
       .footer__list {
         justify-content: center; } }
+    @media (max-width: 34.375em) {
+      .footer__list {
+        flex-direction: column;
+        align-items: center; } }
     .footer__list-item {
       padding-right: .8rem; }
       .footer__list-item--single-item {
@@ -193,6 +204,9 @@ body {
         font-size: .87rem;
         color: #fff;
         text-transform: uppercase; }
+        @media (max-width: 34.375em) {
+          .footer__list-item--single-item {
+            font-size: 1.5rem; } }
   .footer__text-box {
     padding: 0 1.8rem 0 2.5rem;
     width: 30rem;
@@ -203,6 +217,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center; } }
+    @media (max-width: 34.375em) {
+      .footer__text-box {
+        width: 80%; } }
     .footer__text-box-heading {
       font-weight: 700;
       margin-bottom: 2rem;
@@ -212,12 +229,18 @@ body {
           padding: 2.5rem .5rem 0 .5rem;
           margin-top: 2.5rem;
           border-top: 1px solid #fff; } }
+      @media (max-width: 34.375em) {
+        .footer__text-box-heading {
+          font-size: 2rem; } }
     .footer__text-box-paragraph {
       font-weight: 400;
       color: #fff; }
       @media (max-width: 48em) {
         .footer__text-box-paragraph {
           text-align: center; } }
+      @media (max-width: 34.375em) {
+        .footer__text-box-paragraph {
+          font-size: 1.5rem; } }
 
 .header {
   display: flex;
